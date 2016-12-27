@@ -1,19 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
+import Router from 'vue-router';
+import routes from './router-config';
+{{#if elementui}}
+import ElementUI from 'element-ui';
+{{/if}}
+
+Vue.use(Router);
+{{#if elementui}}
+Vue.use(ElementUI);
+{{/if}}
+
+const router = new Router({
+    routes
+});
 
 export default {
   name: 'app',
+  router: router,
   components: {
-    Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  }
+}
 </script>
 
 <style>
