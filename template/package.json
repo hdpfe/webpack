@@ -9,9 +9,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    {{#element-ui}}
+    {{#elementui}}
     "element-ui": "^1.0.6",
-    {{/element-ui}}
+    {{/elementui}}
     "vue": "^2.1.7",
     "vue-router": "^2.1.1"
   },

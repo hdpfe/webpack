@@ -8,14 +8,14 @@
 
 import Router from 'vue-router';
 import routes from './router-config';
-{{#if elementui}}
+{{#elementui}}
 import ElementUI from 'element-ui';
-{{/if}}
+{{/#elementui}}
 
 Vue.use(Router);
-{{#if elementui}}
+{{#elementui}}
 Vue.use(ElementUI);
-{{/if}}
+{{/elementui}}
 
 const router = new Router({
     routes
