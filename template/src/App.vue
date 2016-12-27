@@ -10,7 +10,7 @@ import Router from 'vue-router';
 import routes from './router-config';
 {{#elementui}}
 import ElementUI from 'element-ui';
-{{/#elementui}}
+{{/elementui}}
 
 Vue.use(Router);
 {{#elementui}}
